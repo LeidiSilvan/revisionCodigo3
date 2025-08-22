@@ -8,8 +8,8 @@ const productos = [
   {nombre: "Zapato rojo", tipo: "zapato", color: "rojo", img: "./zapato-rojo.jpg"}
 ]
 
-const li = document.getElementById("lista-de-productos")
-const $i = document.querySelector('input');
+const li = document.getElementById("lista-de-productos")//se cambia el getElementsByName por getElementById
+const $i = document.querySelector('input');//se quita el punto de ('input')
 
 for (let i = 0; i < productos.length; i++) {
   var d = document.createElement("div")
@@ -28,7 +28,7 @@ for (let i = 0; i < productos.length; i++) {
   li.appendChild(d)
 
 }
-
+//se elimina displayProductos(productos)
 
 const botonDeFiltro = document.querySelector("button");
 
